@@ -1,26 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="content">
+    <input type="text" name="value">&nbsp;
+    <input type="submit" name="c" value="Create">&nbsp;
+    <input type="submit" name="r" value="Read">&nbsp;
+    <input type="submit" name="u" value="Update">&nbsp;
+    <input type="submit" name="d" value="Delete">&nbsp;
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  .content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
 </style>
